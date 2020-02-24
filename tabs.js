@@ -3,9 +3,6 @@ $(init);
 
 function init()
 {
-	// Get all of the divs that contain the tab contents
-	var tabContainers = $(".tabBody");
-
 	// Get all anchors that are the clickable tabs
 	var tabAnchors = $(".tabTop");
 	
