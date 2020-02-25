@@ -11,6 +11,19 @@ function init()
 	
 	// Programmatically perform a "click" on the first tab
 	tabAnchors.first().click();
+
+	// Not part of the tabs, but shows how to count checkboxes
+	$("button").click(orderSamples);
+}
+
+function orderSamples()
+{
+	// jQuery, get me all the inputs where the name is sample
+	// that are checked, and count how many
+	var numSamples = $("input[name='sample']:checked").length;
+
+	// Output the number of samples asked for
+	$("#output").text("You asked for " + numSamples + " samples");
 }
 
 function doTabClick()
