@@ -4,53 +4,54 @@
 <head>
     <title>Tabs</title>
 
-    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link href="tabs.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body id="page">
-    <div class="tabs">
-        <ul class="navbar">
-            <li><a href="tabs.html#first" class="tabTop">Tab 1</a></li>
-            <li><a href="tabs.html#second" class="tabTop">Tab 2</a></li>
-            <li><a href="tabs.html#third" class="tabTop">Tab 3</a></li>
-        </ul>
+<div class="tabs">
+    <ul class="navbar">
+        <li><a href="tabs.html#first" class="tabTop">Tab 1</a></li>
+        <li><a href="tabs.html#second" class="tabTop">Tab 2</a></li>
+        <li><a href="tabs.html#third" class="tabTop">Tab 3</a></li>
+    </ul>
 
-        <div id="first" class="tabBody">
+    <div id="first" class="tabBody">
+        <fieldset>
+            <legend>Choose Free Soap Samples</legend>
             <label>
-                Quantity <input type="number" id="quantity">
+                <input type="checkbox" name="sample" value="Lavender"> Lavender
             </label>
-
-            <h5>Choose Free Soap Samples</h5>
+            <br/>
             <label>
-                Lavender <input type="checkbox" name="sample">
+                <input type="checkbox" name="sample" value="Citrus"> Citrus
             </label>
+            <br/>
             <label>
-                Citrus <input type="checkbox" name="sample">
+                <input type="checkbox" name="sample" value="Spring Rain"> Spring Rain
             </label>
-            <label>
-                Spring Rain <input type="checkbox" name="sample">
-            </label>
-
+            <br/><br/>
             <button>Order</button>
+        </fieldset>
 
-            <p id="output"></p>
-        </div>
-
-        <div id="second" class="tabBody">
-            <h2>Thanks for visiting Tab 2</h2>
-            <p>Lorem ipsum dolor sit amet</p>
-        </div>
-
-        <div id="third" class="tabBody">
-            <h2>Tab 3 is the best tab</h2>
-            <p>Lorem ipsum dolor sit amet</p>
-        </div>
+        <p id="sampleCount"></p>
+        <p id="sampleNames"></p>
     </div>
-    <div class="waste"></div>
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-	<script src="tabs.js"></script>
-    
+
+    <div id="second" class="tabBody">
+        <h2>Thanks for visiting Tab 2</h2>
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+
+    <div id="third" class="tabBody">
+        <h2>Tab 3 is the best tab</h2>
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+</div>
+<div class="waste"></div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="tabs.js"></script>
+
 </body>
 
 </html>
